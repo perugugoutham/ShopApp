@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" xmlns:tools="http://schemas.android.com/tools"
+        android:padding="5dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="32dp" android:layout_height="32dp"
+            android:src="@drawable/ic_shopping_cart_black_24dp"
+            android:id="@+id/cart_menu_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            tools:text="1"
+            android:id="@+id/cart_count"
+            android:background="@drawable/circular_bg"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@id/cart_menu_icon"
+            app:layout_constraintTop_toTopOf="@id/cart_menu_icon"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

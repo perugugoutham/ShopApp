@@ -1,0 +1,66 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'kotlin-kapt'
+
+apply plugin: "androidx.navigation.safeargs.kotlin"
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.goutham.perugu.shopapp"
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.1.0-rc01'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    //Used for fragment navigations
+    implementation "android.arch.navigation:navigation-fragment-ktx:1.0.0"
+    implementation "android.arch.navigation:navigation-ui-ktx:1.0.0"
+
+    implementation "androidx.lifecycle:lifecycle-extensions:2.0.0"
+
+    //Used for sending UI event (Fire and forget events) - Publish Relay
+    implementation 'com.jakewharton.rxrelay2:rxrelay:2.1.0'
+
+    //For File Utils and Resource Utils code
+    implementation 'com.blankj:utilcode:1.23.6'
+
+    //For converting json string to data object
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+    //Database - for storing the product details
+    implementation "androidx.room:room-runtime:2.1.0"
+    kapt "androidx.room:room-compiler:2.1.0"
+
+    //For threading
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.0.0"
+
+    //For debugging data base
+    debugImplementation 'com.facebook.stetho:stetho:1.5.1'
+
+    //For material UI components
+    implementation 'com.google.android.material:material:1.1.0-alpha09'
+
+}

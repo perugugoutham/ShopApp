@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ShopApp</string>
+    <string name="rupees">Rs. %1$s</string>
+    <string name="total">Total %1$s</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="available">Available %1$s</string>
+</resources>

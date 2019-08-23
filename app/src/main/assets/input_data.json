@@ -1,0 +1,58 @@
+{
+  "Products": [
+    {
+      "name": "Microwave oven",
+      "stock": 14,
+      "cart": 0,
+      "itemId": "1",
+      "categoryId": "1",
+      "thumbnail": "microwave_oven.png",
+      "cost" : 150.0
+    },
+    {
+      "name": "Television",
+      "stock": 17,
+      "cart": 0,
+      "itemId": "2",
+      "categoryId": "1",
+      "thumbnail": "television.png",
+      "cost" : 230.0
+    },
+    {
+      "name": "Vacuum Cleaner",
+      "itemId": "3",
+      "categoryId": "1",
+      "stock": 11,
+      "cart": 0,
+      "thumbnail": "vacuum_cleaner.png",
+      "cost" : 430.0
+    },
+    {
+      "name": "Chair",
+      "itemId": "4",
+      "categoryId": "2",
+      "stock": 30,
+      "cart": 0,
+      "thumbnail": "chair.png",
+      "cost" : 120.0
+    },
+    {
+      "name": "Table",
+      "itemId": "5",
+      "categoryId": "2",
+      "stock": 10,
+      "cart": 0,
+      "thumbnail": "table.png",
+      "cost" : 140.0
+    },
+    {
+      "name": "Alimirah",
+      "itemId": "6",
+      "categoryId": "2",
+      "stock": 40,
+      "cart": 0,
+      "thumbnail": "almirah.png",
+      "cost" : 500.0
+    }
+  ]
+}
